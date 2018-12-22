@@ -27,6 +27,7 @@ BuildRequires:	qmake5 >= %{version}
 BuildRequires:	pkgconfig(Qt5Core) >= %{version}
 BuildRequires:	pkgconfig(Qt5Widgets) >= %{version}
 BuildRequires:	pkgconfig(Qt5Test) >= %{version}
+BuildRequires:	pkgconfig(Qt5SerialPort) >= %{version}
 BuildRequires:	pkgconfig(libudev)
 # For the Provides: generator
 BuildRequires:	cmake >= 3.11.0-1
