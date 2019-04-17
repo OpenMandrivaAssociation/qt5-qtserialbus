@@ -9,7 +9,7 @@
 %define _qt5_prefix %{_libdir}/qt%{api}
 
 Name:		qt5-qtserialbus
-Version:	5.12.2
+Version:	5.12.3
 %if "%{beta}" != ""
 Release:	0.%{beta}.1
 %define qttarballdir qtserialbus-everywhere-src-%{version}-%{beta}
