@@ -1,0 +1,15 @@
+diff -up qtserialbus-everywhere-src-5.13.0/src/plugins/canbus/socketcan/socketcanbackend.cpp.omv~ qtserialbus-everywhere-src-5.13.0/src/plugins/canbus/socketcan/socketcanbackend.cpp
+--- qtserialbus-everywhere-src-5.13.0/src/plugins/canbus/socketcan/socketcanbackend.cpp.omv~	2019-07-03 16:39:57.642777617 +0200
++++ qtserialbus-everywhere-src-5.13.0/src/plugins/canbus/socketcan/socketcanbackend.cpp	2019-07-03 16:40:41.219775503 +0200
+@@ -50,6 +50,11 @@
+ #include <net/if.h>
+ #include <sys/ioctl.h>
+ #include <sys/time.h>
++#include <sys/socket.h>
++
++#ifndef SIOCGSTAMP
++#define SIOCGSTAMP 0x8906
++#endif
+ 
+ #ifndef CANFD_MTU
+ // CAN FD support was added by Linux kernel 3.6
