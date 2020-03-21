@@ -1,6 +1,6 @@
 %define api %(echo %{version} |cut -d. -f1)
 %define major %api
-%define beta beta1
+%define beta beta2
 
 %define qtserialbus %mklibname qt%{api}serialbus %{major}
 %define qtserialbusd %mklibname qt%{api}serialbus -d
