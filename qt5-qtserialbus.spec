@@ -1,6 +1,6 @@
 %define api %(echo %{version} |cut -d. -f1)
 %define major %api
-%define beta beta2
+%define beta beta3
 
 %define qtserialbus %mklibname qt%{api}serialbus %{major}
 %define qtserialbusd %mklibname qt%{api}serialbus -d
@@ -19,7 +19,6 @@ Release:	1
 %define qttarballdir qtserialbus-everywhere-src-%{version}
 Source0:	http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/%{qttarballdir}.tar.xz
 %endif
-Patch0:		qtserialbus-5.13-compile.patch
 Summary:	Qt library for accessing industrial serial buses
 Group:		Development/KDE and Qt
 License:	LGPLv2 with exceptions or GPLv3 with exceptions and GFDL
